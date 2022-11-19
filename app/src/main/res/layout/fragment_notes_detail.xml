@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NotesDetailFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/notes_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="title" />
+
+            <TextView
+                android:id="@+id/notes_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textSize="18sp"
+                tools:text="Notes"
+                android:maxLines="20"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/editFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_edit"
+            android:src="@android:drawable/ic_menu_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/delete_notes"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/action_delete"
+            android:src="@android:drawable/ic_input_delete"
+            app:layout_constraintEnd_toStartOf="@+id/editFloatingActionButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@android:color/white" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

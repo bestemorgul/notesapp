@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="title">Title</string>
+    <string name="Notes">Notes</string>
+
+</resources>

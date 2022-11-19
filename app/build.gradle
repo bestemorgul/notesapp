@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    namespace 'com.bestemorgul.notesapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.bestemorgul.notesapp"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    def nav_version = "2.5.3"
+    def appcompat_version = '1.5.1'
+    def activity_version = '1.1.0'
+    def constraintlayout_version = '2.1.4'
+    def core_ktx_version = '1.9.0'
+    def coroutines_version = '1.4.2'
+    def kotlin_version = '1.7.10'
+    def  lifecycle_version = '2.5.1'
+    def material_version = '1.7.0'
+    def room_version = '2.4.3'
+
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    implementation "com.google.android.material:material:$material_version"
+
+    // Lifecycle libraries
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Navigation libraries
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Room libraries
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+}
