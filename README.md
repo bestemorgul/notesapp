@@ -21,8 +21,8 @@ This is a simple note taking Android App including:
 
  ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/106580852/202853778-c58e4928-0eb0-4263-833e-b7bbb97df119.png" width=200 height=400/> <img src="https://user-images.githubusercontent.com/106580852/202853630-77de0e93-5999-407f-b3cc-8668d3be735b.png" width=200 height=400/> 
-<img src="https://user-images.githubusercontent.com/106580852/202854934-e7c5942c-7e10-4963-9b17-376612756240.png" width=200 height=400/> <img src="https://user-images.githubusercontent.com/106580852/202853778-c58e4928-0eb0-4263-833e-b7bbb97df119.png" width=200 height=400/>
+<img src="https://user-images.githubusercontent.com/106580852/202855462-32590a72-22f8-462e-8622-84cf62f97470.png" width=200 height=400/> <img src="https://user-images.githubusercontent.com/106580852/202853630-77de0e93-5999-407f-b3cc-8668d3be735b.png" width=200 height=400/> 
+<img src="https://user-images.githubusercontent.com/106580852/202854934-e7c5942c-7e10-4963-9b17-376612756240.png" width=200 height=400/> <img src="https://user-images.githubusercontent.com/106580852/202853778-c58e4928-0eb0-4263-833e-b7bbb97df119.png" width=200 height=400/> 
 
 
 
