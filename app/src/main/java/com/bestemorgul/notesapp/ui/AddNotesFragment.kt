@@ -59,6 +59,7 @@ class AddNotesFragment : Fragment() {
         binding.apply{
             notesTitle.setText(notes.noteTitle, TextView.BufferType.SPANNABLE)
             notesBody.setText(notes.noteBody, TextView.BufferType.SPANNABLE)
+
             actionSave.setOnClickListener {
                 updateNotes()
             }
