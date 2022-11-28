@@ -44,7 +44,7 @@ class AddNotesFragment : Fragment() {
     private fun updateNotes() {
         if (isEntryValid()) {
             viewModel.updateNotes(
-                id = id,
+                id = navigationArgs.id,
                 noteTitle = binding.notesTitle.text.toString(),
                 noteBody = binding.notesBody.text.toString()
             )
